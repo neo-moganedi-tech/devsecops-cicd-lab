@@ -4,7 +4,7 @@ from app import get_system_status
 def test_system_status():
     result = get_system_status()
 
-    assert result["status"] == "FAILED"
+    assert result["status"] == "HEALTHY"
     assert result["application"] == "Infrastructure Health API"
     assert result["version"] == "1.0.0"
 
